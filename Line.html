@@ -14,7 +14,7 @@
             display:flex;
             width: 1000px;
             margin:auto;
-            margin-top:100px;
+            margin-top:0;
 
         }
 
@@ -42,6 +42,7 @@
            width:500px;
            border: 1px solid rgb(202, 202, 202);
            border-style: dashed;
+           padding:70px 0;
        }
 
        .item-img img{
@@ -73,6 +74,14 @@
         font-weight:normal;
        }
 
+       .FakeButton a {
+           display: inline-block;
+        font-size: 16px;
+        line-height: 16px;
+        padding:17px 0;
+        font-weight:normal;
+       }
+
        
        .FakeButton:hover{
            background-color: rgb(3, 189, 3);
@@ -84,17 +93,26 @@
             text-align: center;
             position: fixed;
             background-color: white;
-            height: 50px;
+            height: 40px;
             top: 0px;
-            padding: 30px 0;
+            padding:20px 0;
+
       }
 
       nav a{
-          padding:20px;
+          display:inline-block;
+          padding:0 24px;
          text-decoration: none;
          color:black;
          font-family: sans-serif;
+         font-size: 16px;
+         line-height: 16px;
+         vertical-align: middle;
+         margin-top:12px;
+
       }
+
+      
 
 
     </style>
@@ -107,6 +125,7 @@
 <a href="">通訊軟體</a>
 <a href="">服務總覽</a>
     </nav>
+    <img src="" alt="">
 </header>
    
        <div class="item-group">
@@ -120,7 +139,7 @@
                 </p>
                 <p style="color: grey;">最即時的新聞、影音、運動賽事和娛樂內容直播，讓你話題永不斷線，LINE TODAY陪伴您的每一天！</p>
                 <div class="FakeButton">
-                    <h4><strong>其他詳細諮詢</strong></h4>
+                    <a><strong>其他詳細諮詢</strong></a>
                 </div>
             </div>
         </div>
