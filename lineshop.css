@@ -31,7 +31,7 @@ header{
 .head a{
     display: inline-block;
     padding-right:16px;
-    color: cornsilk;
+    color: white;
     text-decoration: none;
     font-size: 14px;
 }
@@ -51,6 +51,17 @@ div nav ul{
 div nav ul li{
     padding:0 12px;
     font-size:14px;
+}
+
+div nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+div nav ul li :hover{
+    border-bottom: 5px solid rgb(4, 71, 255);
+    padding-bottom:29px;
+    color:rgb(4, 71, 255);
 }
 
 .logo{
@@ -204,6 +215,11 @@ article{
     background-color: rgb(156, 196, 243);
     border-radius:90px;
     margin-right: 8px;
+    text-align: center;
+}
+.article_text .list ul li .mark i{
+    font-size: 3px;
+    color: rgb(4, 71, 255);
 }
 .article_text .list ul li p{
     font-size: 16px;
@@ -366,8 +382,7 @@ border-bottom: 6px solid rgb(4, 71, 255);
     color: white;
     margin-bottom: 40px;
 }
-.global_background h4 span{
-}
+
 .global_background input{
     width:400px;
     padding:12px;
@@ -380,7 +395,7 @@ border-bottom: 6px solid rgb(4, 71, 255);
 
 .otherinfo{
     background-color: rgb(19, 25, 58);
-    padding:60px 0 60px 0;
+    padding:60px 0;
 }
 .otherinfo_wrap{
     display: flex;
@@ -398,14 +413,101 @@ border-bottom: 6px solid rgb(4, 71, 255);
     font-family: sans-serif;
     margin-bottom: 40px;
 }
-.otherinfo_wrap div ul li{
+.otherinfo_wrap div ul li a{
     color: white;
     font-size: 14px;
     font-family: sans-serif;
     padding-bottom: 24px;
     opacity:0.7;
+    display: block;
+    text-decoration: none;
 }
-.otherinfo_wrap div ul li :hover{
+.otherinfo_wrap div ul li a:hover{
     color: white;
     opacity:1;
+}
+.info_button{
+    width:100%;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 52px;
+    box-sizing: border-box;
+}
+
+.info_button input{
+    width:200px;
+    height:40px;
+    background-color: rgb(195, 226, 223);
+    border-style: none;
+    border-radius: 0;
+}
+
+footer{
+    background-color:rgb(19, 25, 58);
+}
+
+footer > div{
+    display: flex;
+    width:90%;
+    margin:auto;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding:48px 0;
+}
+footer > div .footer_menu{
+    width:30%;
+}
+footer > div .footer_menu ul{
+    display: flex;
+    padding:9px 0;
+    box-sizing: border-box;
+}
+footer > div .footer_menu ul li{
+    padding-right:8px;
+}
+footer > div .footer_menu ul li :hover{
+    color: rgb(4, 71, 255);
+}
+footer > div .footer_menu ul :nth-child(1n+2){
+    border-left: 1px solid rgb(255, 255, 255, 0.5);
+    padding-left:8px;
+}
+footer > div .footer_menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+footer > div .footer_link{
+    width:40%;
+}
+footer > div .footer_link ul{
+    display: flex;
+    text-align: center;
+}
+footer > div .footer_link ul li{
+    width:16%;
+}
+footer > div .footer_link ul li a{
+    width:40px;
+    height:40px;
+    display: block;
+    border-radius: 90px;
+    background-color:rgb(37, 47, 104);
+}
+footer > div .footer_link ul li a i{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+footer > div .footer_link ul li:hover{
+   color:rgb(4, 71, 255);
+}
+
+footer > div .footer_p p{
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    opacity:0.7;
 }
