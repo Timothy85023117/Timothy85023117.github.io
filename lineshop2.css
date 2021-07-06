@@ -1,0 +1,463 @@
+.backgroundImage{
+    background: url("https://img.shoplineapp.com/media/image_clips/5f069a12dc4d9a00335656c2/original.png?1594268177") no-repeat center/auto 100%;
+}
+.head{
+    display: none;
+}
+
+.head>a i{
+    font-size: 20px;
+    color: white;
+    padding:0 16px 0 0;
+    border-right: 1px solid white;
+}
+
+header{
+    width:100%;
+    position:sticky;
+    top:0;
+    box-shadow: 0px 0px 8px #cccccc;
+}
+
+
+.head{
+    width:100%;
+    justify-content:flex-end;
+    padding:10px 0;
+    background-color: rgb(15, 15, 26);
+    align-items:center;
+}
+.head a{
+    display: inline-block;
+    padding-right:16px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.head_nav{
+    display: flex;
+    width:100%;
+    padding:24px 20px;
+    align-items:center;
+    background-color: white;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.head_nav .logo{
+    width:160px;
+}
+.head_nav .logo img{
+    width:100%;
+}
+.head_nav .menu{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:100%;
+    left:-100%;
+    background-color: white;
+}
+.head_nav .menu nav ul{
+    margin: 20px 40px;
+}
+.head_nav .menu nav ul li{
+    padding:24px;
+    border-bottom: 1.2px solid rgba(0, 0, 0, .08);
+}
+.head_nav .menu nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+.head_nav .hamburger{
+    width:40px;
+    height:40px;
+    position: relative;
+}
+.hamburger span{
+    position: absolute;
+    display: block;
+    width:80%;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:6px;
+    background-color: black;
+    transform:rotate(0);
+
+}
+.hamburger span:first-child{
+    top:20px;
+}
+.hamburger span:nth-child(2){
+    opacity: 1;
+}
+.hamburger span:last-child{
+    bottom:20px;
+}
+#menu_check{
+    display: none;
+}
+#menu_check:checked ~ .head_nav .hamburger span:first-child{
+    top:0;
+    transform:rotate(45deg);
+    transition: top 1s, transform 1s 1s;
+}
+#menu_check:checked ~ .head_nav .hamburger span:nth-child(2){
+    opacity: 0;
+    transition: opacity 0.1s 1s;
+}
+#menu_check:checked ~ .head_nav .hamburger span:last-child{
+    bottom:0;
+    transform:rotate(-45deg);
+    transition:  bottom 1s, transform 1s 1s;
+}
+#menu_check:checked ~ .head_nav .menu{
+    left:0;
+    opacity:1;
+    transition: 1s;
+}
+.banner_text h1{
+    font-size: 40px;
+    padding-bottom: 12px;
+}
+.banner_text h2{
+    font-size: 40px;
+    color: rgb(4, 71, 255);
+    padding-bottom: 40px;
+}
+.banner_text p{
+    font-size: 16px;
+    width:84%;
+    line-height:28px;
+    padding-bottom: 40px;
+}
+.col img{
+    width:100%;
+}
+.banner_text{
+    color:white;
+}
+.description{
+    text-align: center;
+    margin:30px auto;
+}
+
+.article_text h3{
+    font-size: 36px;
+}
+.article_text .line{
+    border-bottom: 3px solid rgb(255, 174, 0);
+    width:80px;
+    margin:24px 0;
+}
+.article_text>p{
+    width:100%;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 2;
+}
+.article_text .list{
+    display: flex;
+    width:100%;
+    margin-bottom: 24px;
+}
+.article_text .list ul{
+    width:50%;
+}
+
+.article_text .list ul li{
+    padding:10px 0;
+    display: flex;
+    align-items: center;
+}
+.article_text .list ul li .mark{
+    width:18px;
+    height: 18px;
+    background-color: rgb(156, 196, 243);
+    border-radius:90px;
+    margin-right: 8px;
+    text-align: center;
+}
+.article_text .list ul li .mark i{
+    font-size: 3px;
+    color: rgb(4, 71, 255);
+}
+.article_text .list ul li p{
+    font-size: 16px;
+}
+
+#arrow{
+    padding:0 4px;
+}
+
+.section_wrap{
+    background-color: rgb(237, 238, 238);
+    padding-bottom: 90px;
+}
+.section_wrap h4{
+    font-size: 32px;
+    text-align: center;
+    padding:60px 0 10px 0;
+}
+.wrap{
+    display: flex;
+    width:100%;
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.wrap>div{
+    box-sizing: border-box;
+    width:33.3%;
+    text-align: center;
+    padding:10px 60px;
+}
+.wrap>div>h5{
+    font-size:20px;
+    font-family:serif;
+    font-style: normal;
+    margin-bottom: 12px;
+}
+.wrap>div>p{
+    font-family:sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 2;
+    text-align: justify;
+}
+.background_circle{
+    width:120px;
+    height:120px;
+    background-color: white;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    margin: 32px auto;
+    box-shadow: 0px 0px 12px #cccccc;
+}
+.background_circle img{
+    width:72px;
+    margin:auto 0;
+}
+
+.brand h4{
+    font-size:32px;
+    text-align: center;
+    margin:40px 0;
+}
+.brand h4 span{
+    color:rgb(4, 71, 255);
+}
+
+.brand_article_text > a {
+    font-size: 18px;
+    color:rgb(4, 71, 255);
+    display:block;
+    text-decoration: none;
+    font-family:sans-serif;
+}
+.brand_article_text > a i{
+    font-size: 18px;
+}
+.brand_article_text >p {
+    font-size: 16px;
+    line-height: 2;
+    width:84%;
+    padding-bottom: 48px;
+}
+.brand_article_text >h5 {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.global_background {
+    width:100%;
+    height: 360px;
+    background: url("https://img.shoplineapp.com/media/image_clips/5f069a12dc4d9a00335656c2/original.png?1594268177") no-repeat center;
+    padding:80px 0 0 40px;
+    box-sizing: border-box;
+}
+
+.global_background h4{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.global_background input{
+    width:400px;
+    padding:12px;
+    border-radius: 50px;
+    background-color:rgb(4, 71, 255);
+    border-style: none;
+    color: white;
+    font-size: 20px;
+}
+
+.otherinfo_wrap div ul{
+    display: none;
+}
+.otherinfo{
+    background-color: rgb(19, 25, 58);
+    padding:60px 0;
+}
+.otherinfo_wrap div p{
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+.otherinfo_wrap div ul li a{
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding-bottom: 24px;
+    opacity:0.7;
+    display: block;
+    text-decoration: none;
+}
+.otherinfo_wrap div ul li a:hover{
+    color: white;
+    opacity:1;
+}
+.info_button{
+    width:100%;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 52px;
+    box-sizing: border-box;
+}
+
+.info_button input{
+    width:200px;
+    height:40px;
+    background-color: rgb(195, 226, 223);
+    border-style: none;
+    border-radius: 0;
+}
+@media screen and (min-width:768px) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width:992px) {
+    .head {
+        display: flex;
+    }
+    .hamburger{
+        display: none;
+    }
+    .head_nav .menu{
+        display: flex;
+        width:76%;
+        height:auto;
+        position: relative;
+        top:0;
+        left:0;
+        justify-content: flex-end;
+        transition: 0s;
+    }
+    .head_nav .menu nav{
+        display: flex;
+    }
+    .head_nav .menu nav ul{
+        margin:0;
+        display: flex;
+    }
+    .head_nav .menu nav ul li{
+        padding:0 12px;
+        border-bottom:none;
+    }
+
+    .article .row:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    .brand_article{
+        flex-direction: row-reverse;
+    }
+    .otherinfo_wrap{
+        align-items: flex-start;
+        text-align: center;
+    }
+    .otherinfo_wrap div ul{
+        display: block;
+    }
+    footer{
+        background-color:rgb(19, 25, 58);
+    }
+    
+    footer > div{
+        display: flex;
+        width:90%;
+        margin:auto;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        padding:48px 0;
+    }
+    footer > div .footer_menu{
+        width:30%;
+    }
+    footer > div .footer_menu ul{
+        display: flex;
+        padding:9px 0;
+        box-sizing: border-box;
+    }
+    footer > div .footer_menu ul li{
+        padding-right:8px;
+    }
+    footer > div .footer_menu ul li :hover{
+        color: rgb(4, 71, 255);
+    }
+    footer > div .footer_menu ul :nth-child(1n+2){
+        border-left: 1px solid rgb(255, 255, 255, 0.5);
+        padding-left:8px;
+    }
+    footer > div .footer_menu ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+    footer > div .footer_link{
+        width:40%;
+    }
+    footer > div .footer_link ul{
+        display: flex;
+        text-align: center;
+    }
+    footer > div .footer_link ul li{
+        width:16%;
+    }
+    footer > div .footer_link ul li a{
+        width:40px;
+        height:40px;
+        display: block;
+        border-radius: 90px;
+        background-color:rgb(37, 47, 104);
+    }
+    footer > div .footer_link ul li a i{
+        font-size: 20px;
+        color: white;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+    footer > div .footer_link ul li:hover{
+       color:rgb(4, 71, 255);
+    }
+    
+    footer > div .footer_p p{
+        color: white;
+        font-size: 14px;
+        font-family: sans-serif;
+        opacity:0.7;
+    }
+}
+
+
