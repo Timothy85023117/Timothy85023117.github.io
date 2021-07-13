@@ -1,5 +1,7 @@
 .backgroundImage{
     background: url("https://img.shoplineapp.com/media/image_clips/5f069a12dc4d9a00335656c2/original.png?1594268177") no-repeat center/auto 100%;
+    width:100%;
+    background-color:black;
 }
 .head{
     display: none;
@@ -212,9 +214,7 @@ header{
 
 .wrap>div{
     box-sizing: border-box;
-    width:33.3%;
     text-align: center;
-    padding:10px 60px;
 }
 .wrap>div>h5{
     font-size:20px;
@@ -304,7 +304,6 @@ header{
 }
 .otherinfo{
     background-color: rgb(19, 25, 58);
-    padding:60px 0;
 }
 .otherinfo_wrap div p{
     color: white;
@@ -460,7 +459,11 @@ footer > div .footer_p p{
     .otherinfo_wrap div ul{
         display: block;
     }
-    
+    .wrap>div{
+        box-sizing: border-box;
+        text-align: center;
+        padding:10px 60px;
+    }
 }
 
 

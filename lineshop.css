@@ -245,6 +245,7 @@ article{
 .section_wrap{
     background-color: rgb(237, 238, 238);
     padding-bottom: 90px;
+    width: 100%;
 }
 .section_wrap h4{
     font-size: 32px;
