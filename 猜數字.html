@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+            <div class="row mt-3">
+                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck1">開始</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck2">放棄重來</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck3">看答案</label>
+                  </div>
+            </div>
+            
+            <ul class="list-group mt-3">
+                <!-- <li class="list-group-item">
+                    <span class="badge bg-danger">A2B1</span>
+                    4568
+                </li> -->
+            </ul>
+
+            <div class="input-group mt-5">
+            
+            <input type="text" placeholder="輸入您的答案..." id="myInput" class="form-control">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">猜</button>
+            </div>
+            
+            
+    </div>
+    <script>
+        let randomnumber = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let btnStart = document.querySelectorAll('label')[0];
+        let btnRestart = document.querySelectorAll('label')[1];
+        let check = document.querySelectorAll('label')[2];
+
+        
+        let button = document.querySelector('button');
+        let ul = document.querySelector('ul');
+
+        let final = '';
+        let n1;
+        var inputfirst;
+
+        function getRandom(x){
+        return Math.floor(Math.random()*x);
+        };
+        btnStart.onclick = function(){
+            let number;
+            for(let i=0; i<4; i++){
+               number = getRandom(10);
+               if(randomnumber[number-1] == null)
+               {
+                    i -= 1;
+                    continue;
+               }
+               else{
+                   final += number + '';
+                   randomnumber[number-1] = null;
+               }
+            }
+            console.log(final);
+        };
+        btnRestart.onclick = function(){
+            alert(`${final}`);
+            final = "";
+        };
+
+        check.onclick = function(){
+            alert(`${final}`);
+        };
+
+        function comparedNumber(x){
+            x
+        };
+
+        button.onclick = function(){
+            inputfirst = document.getElementById('myInput').value;
+            var input = inputfirst.split("");
+            var n = final.split("");
+            var A = 0;
+            var B = 0;
+            if(input[0] == input[1] || input[0] == input[2] || input[0] == input[3] || input[1] == input[2] || input[1] == input[3] || input[2] == input[3] || input[4] == true || input[3] == null || input[2] == null || input[1] == null || input[0] == null){
+                alert('輸入錯誤');
+            }
+            else{
+                for(i=0; i<=3; i++){
+                    if(input[i] == n[i])
+                    {   
+                        A += 1;
+                    }
+                    if(input[i] == n[0] || input[i] == n[1] || input[i] == n[2] || input[i] == n[3])
+                    {   
+                        B += 1;
+                    }
+                }
+                var li = document.createElement('li');
+                var span = document.createElement('span');
+                li.classList = 'list-group-item';
+                span.classList = 'badge bg-danger';
+                li.innerHTML = inputfirst;
+                span.innerText = `${A}A${B}B`;
+                ul.appendChild(li);
+                li.appendChild(span);
+                //li.innerText = inputfirst;
+                if(A==4){
+                    alert("恭喜挑戰成功");
+                    span.classList = 'badge bg-success';
+                }
+            }
+            
+            inputfirst = "";
+        }
+
+           
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
