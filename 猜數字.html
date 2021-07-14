@@ -106,10 +106,12 @@
                 var span = document.createElement('span');
                 li.classList = 'list-group-item';
                 span.classList = 'badge bg-danger';
-                li.innerHTML = inputfirst;
+                
                 span.innerText = `${A}A${B}B`;
-                ul.appendChild(li);
                 li.appendChild(span);
+                li.append(inputfirst);
+                ul.appendChild(li);
+                
                 //li.innerText = inputfirst;
                 if(A==4){
                     alert("恭喜挑戰成功");
