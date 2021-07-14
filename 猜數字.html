@@ -32,7 +32,7 @@
             <div class="input-group mt-5">
             
             <input type="text" placeholder="輸入您的答案..." id="myInput" class="form-control">
-            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">猜</button>
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" disabled>猜</button>
             </div>
             
             
@@ -69,6 +69,7 @@
                }
             }
             console.log(final);
+            button.disabled = false;
         };
         btnRestart.onclick = function(){
             alert(`${final}`);
@@ -79,9 +80,7 @@
             alert(`${final}`);
         };
 
-        function comparedNumber(x){
-            x
-        };
+        
 
         button.onclick = function(){
             inputfirst = document.getElementById('myInput').value;
