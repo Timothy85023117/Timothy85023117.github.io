@@ -70,20 +70,26 @@
         .dropdown:hover .dropbtn {
             background-color: red;
         }
+        @media screen and (min-width:768px){
+          .sticky{
+            position: sticky;
+            top:0;
+          }
+        }
     </style>
   </head>
   <body>
     <div>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home">Mac</a></li>
         <li class="dropdown">
-            <a href="#" class="dropbtn">品牌主機</a>
+            <a href="#" class="dropbtn">iPhone</a>
             <div class="dropdown-content" id="pc">
       
             </div>
         </li>
         <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">電腦零件</a>
+            <a href="javascript:void(0)" class="dropbtn">iPad</a>
             <div class="dropdown-content" id="parts">
       
             </div>
@@ -105,7 +111,7 @@
     </div>
     <div class="container mt-5">
       <div class="row align-items-start">
-          <div class="col-12 col-md-6 position-sticky top-0">
+          <div class="col-12 col-md-6 sticky">
             <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-xr-white-select-201809?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1551226036668" alt="" class="w-100" id="phoneImage">
           </div>
           <div class="col-12 col-md-6">
