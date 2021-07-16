@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown" onmouse="">
+            <a href="#" class="dropbtn">品牌電腦</a>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">電腦零件</a>
+        </li>
+    </ul>
+
+    <script>
+        /*
+        const pc = [
+            { pc: "華碩", url: "https://www.asus.com" },
+            { pc: "技嘉", url: "https://www.gigabyte.com" },
+            { pc: "微星", url: "https://tw.msi.com" },
+        ];
+
+        const parts = [
+            { parts: "CPU", url: "https://24h.pchome.com.tw/region/DRAI" },
+            { parts: "GPU", url: "https://24h.pchome.com.tw/region/DRAD" },
+            { parts: "SSD", url: "https://24h.pchome.com.tw/region/DRAH" },
+        ];
+        */
+        let url = "https://raw.githubusercontent.com/Timothy85023117/FileStorage/main/computer.json";
+        let pcArray, partsArray;
+
+        let pcItems, partsItems;
+        let div;
+        let div1;
+        let a;
+        let li;
+        window.onload = function () {
+            
+                    
+            fetch(url)
+                .then(response=>response.json())
+                .then(result=> {
+                    pcArray = result.Pc;
+                    partsArray = result.Parts;
+
+                    console.log(pcArray);
+                    console.log(partsArray);
+
+                    div = document.createElement('div');
+                    li = document.querySelectorAll('.dropdown');
+                    div.classList = 'dropdown-content';
+                    div.id = ('pc');
+                    li[0].appendChild(div);
+
+                    pcArray.forEach((item, index)=>{
+                        a = document.createElement('a');
+                        a.href = 's';
+                        a.setAttribute('href', item.url);
+                        a.innerHTML = item.pc; 
+                        div.appendChild(a);
+                    });
+                    
+                    div1 = document.createElement('div');
+                    div1.classList = 'dropdown-content';
+                    div1.id = ('parts');
+                    li[1].appendChild(div1);
+
+                    partsArray.forEach((item, index)=>{
+                        a = document.createElement('a');
+                        a.href = 's';
+                        a.setAttribute('href', item.url);
+                        a.innerHTML = item.parts; 
+                        div1.appendChild(a);
+                    });
+                })
+                .catch(ex =>{})
+                .finally(()=>{});
+
+
+
+
+            
+        }
+    </script>
+</body>
+
+</html>
+```
