@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+      .text-align-center{
+        text-align: center;
+      }
+      .fs-7{
+        font-size: 12px;
+      }
+      .box-sizing{
+        box-sizing: border-box;
+      }
+      .w-25px{
+        width:25px;
+      }
+      .wrap{
+        flex-wrap:wrap;
+      }
+      .height-90px{
+        height:90px;
+      }
+      .height-160px{
+        height: 160px;
+      }
+      .w-40{
+        width:40%;
+      }
+      .w-20{
+        width:20%;
+      }
+      .cardHover:hover {
+        border: 1.4px solid rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+      }
+      .blue{
+        border:2.5px solid rgb(36, 123, 253);
+        box-sizing: border-box;
+      }
+
+      ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            top:0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">品牌主機</a>
+            <div class="dropdown-content" id="pc">
+      
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">電腦零件</a>
+            <div class="dropdown-content" id="parts">
+      
+            </div>
+        </li>
+      </ul>
+    </div>
+    <nav class="navbar navbar-light bg-white border-bottom border-1 position-sticky w-100" style="z-index:2;top:0;">
+      <div class="container-fluid">
+        <a class="navbar-brand">iPhone X🅁</a>
+        <h2 class="fs-5" id="finalPrice">
+          NT$16,900 起
+        </h2>
+      </div>
+    </nav>
+    <div class="w-100 p-3 bg-light"">
+      <p class="fs-7 my-auto text-align-center">
+        購買 iPhone 可享免額外付費運送服務。
+      </p>
+    </div>
+    <div class="container mt-5">
+      <div class="row align-items-start">
+          <div class="col-12 col-md-6 position-sticky top-0">
+            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-xr-white-select-201809?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1551226036668" alt="" class="w-100" id="phoneImage">
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 class="fw-bold  ps-2">
+              購買 iPhone X🅁
+            </h2>
+            <p class="fw-bold mt-4 ps-2">
+              選擇外觀。
+            </p>
+            <div class="d-flex wrap justify-content-center justify-content-md-start">
+              <div class="card w-40 mx-2 height-90px my-1 cardHover cardchange">
+                <div class="card-body text-align-center rounded-3">
+                  <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-white-201902?wid=96&amp;hei=96&amp;fmt=jpeg&amp;qlt=80&amp;.v=1550604659559" alt="" class="w-25px">
+                  <p class="card-text fs-7 mt-2">白色</p>
+                </div>
+              </div>
+
+              <div class="card w-40 mx-2 height-90px my-1 cardHover cardchange">
+                <div class="card-body text-align-center rounded-3">
+                  <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-black-201902?wid=96&amp;hei=96&amp;fmt=jpeg&amp;qlt=80&amp;.v=1550604657289" alt="" class="w-25px">
+                  <p class="card-text fs-7 mt-2">黑色</p>
+                </div>
+              </div>
+
+              <div class="card w-40 mx-2 height-90px my-1 cardHover cardchange">
+                <div class="card-body text-align-center rounded-3">
+                  <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-blue-201902?wid=96&amp;hei=96&amp;fmt=jpeg&amp;qlt=80&amp;.v=1550604658392" alt="" class="w-25px">
+                  <p class="card-text fs-7 mt-2">藍色</p>
+                </div>
+              </div>
+
+              <div class="card w-40 mx-2 height-90px my-1 cardHover cardchange">
+                <div class="card-body text-align-center rounded-3">
+                  <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-coral-201902?wid=96&amp;hei=96&amp;fmt=jpeg&amp;qlt=80&amp;.v=1550604658597" alt="" class="w-25px">
+                  <p class="card-text fs-7 mt-2">珊瑚色</p>
+                </div>
+              </div>
+
+              <div class="card w-40 mx-2 height-90px my-1 cardHover cardchange">
+                <div class="card-body text-align-center rounded-3">
+                  <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-yellow-201902?wid=96&amp;hei=96&amp;fmt=jpeg&amp;qlt=80&amp;.v=1550604659359" alt="" class="w-25px">
+                  <p class="card-text fs-7 mt-2">黃色</p>
+                </div>
+              </div>
+
+              <div class="card w-40 mx-2 height-90px my-1 cardHover cardchange">
+                <div class="card-body text-align-center rounded-3">
+                  <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-red-201902?wid=96&amp;hei=96&amp;fmt=jpeg&amp;qlt=80&amp;.v=1550604659296" alt="" class="w-25px">
+                  <p class="card-text fs-7 mt-2">(PRODUCT)RED</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex my-3 border-bottom border-1">
+
+              <div class="w-25">
+                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-8-red-logo-201809?wid=170&hei=48&fmt=png-alpha&.v=1568912469853" alt="" class="w-100">
+              </div>
+              <p class="w-75 fs-7">
+                  每筆 iPhone XR (PRODUCT)RED 銷售，都會直接捐助 The Global Fund 基金，以幫助對抗新冠肺炎。
+              </p>
+            </div>
+
+            <p class="fw-bold mt-4 ps-2">
+              選擇儲存容量。
+            </p>
+
+            <div class="d-flex wrap justify-content-center justify-content-md-start">
+              <div class="card w-40 mx-2 height-90px my-1 cardHover price">
+                <div class="card-body text-align-center rounded-3">
+                  <h1 class="fs-3 fw-bold d-inline">64</h1>
+                  <span class="fw-bold">GB1</span>
+                  <p class="card-text fs-7 mt-2">白色</p>
+                </div>
+              </div>
+
+              <div class="card w-40 mx-2 height-90px my-1 cardHover price">
+                <div class="card-body text-align-center rounded-3">
+                  <h1 class="fs-3 fw-bold d-inline">128</h1>
+                  <span class="fw-bold">GB1</span>
+                  <p class="card-text fs-7 mt-2">黑色</p>
+                </div>
+              </div>
+            </div>
+              <button type="button" class="btn btn-primary w-100 my-4" disabled>Primary</button>
+          </div>
+      </div>
+    </div>
+    
+    
+
+    <script>
+      let phoneImageArray = ['https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-xr-white-select-201809?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1551226036668', 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-xr-black-select-201809?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1551226038992', 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-xr-blue-select-201809?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1565209264208', 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-xr-coral-select-201809?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1551226036571', 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-xr-yellow-select-201809?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1551226036826', 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-xr-red-select-201809?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1551226038669'];
+      
+      let phone = document.getElementById('phoneImage');
+      let phoneColor = document.querySelectorAll('.cardchange');
+      let phoneGB1 = document.querySelectorAll('.price');
+      let price = document.getElementById('finalPrice');
+      
+
+      phoneColor[0].onclick = function(){
+        phone.setAttribute('src', phoneImageArray[0]);
+        phoneColor.forEach((item)=>{
+          item.classList = 'card w-40 mx-2 height-90px my-1 cardHover';
+        });
+        this.classList = 'blue card w-40 mx-2 height-90px my-1';
+      };
+      phoneColor[1].onclick = function(){
+        phone.setAttribute('src', phoneImageArray[1])
+        phoneColor.forEach((item)=>{
+          item.classList = 'card w-40 mx-2 height-90px my-1 cardHover';
+        });
+        this.classList = 'blue card w-40 mx-2 height-90px my-1';
+      };
+      phoneColor[2].onclick = function(){
+        phone.setAttribute('src', phoneImageArray[2])
+        phoneColor.forEach((item)=>{
+          item.classList = 'card w-40 mx-2 height-90px my-1 cardHover';
+        });
+        this.classList = 'blue card w-40 mx-2 height-90px my-1';
+      };
+      phoneColor[3].onclick = function(){
+        phone.setAttribute('src', phoneImageArray[3])
+        phoneColor.forEach((item)=>{
+          item.classList = 'card w-40 mx-2 height-90px m-1 cardHover';
+        });
+        this.classList = 'blue card w-40 mx-2 height-90px m-1';
+      };
+      phoneColor[4].onclick = function(){
+        phone.setAttribute('src', phoneImageArray[4])
+        phoneColor.forEach((item)=>{
+          item.classList = 'card w-40 mx-2 height-90px my-1 cardHover';
+        });
+        this.classList = 'blue card w-40 mx-2 height-90px my-1';
+      };
+      phoneColor[5].onclick = function(){
+        phone.setAttribute('src', phoneImageArray[5])
+        phoneColor.forEach((item)=>{
+          item.classList = 'card w-40 mx-2 height-90px my-1 cardHover';
+        });
+        this.classList = 'blue card w-40 mx-2 height-90px my-1';
+      };
+
+      phoneGB1[0].onclick = function(){
+        price.innerHTML = 'NT$16900';
+        phoneGB1.forEach((item)=>{
+          item.classList = 'card w-40 mx-2 height-90px my-1 cardHover';
+        });
+        this.classList = 'blue card w-40 mx-2 height-90px my-1';
+      };
+
+      phoneGB1[1].onclick = function(){
+        price.innerHTML = 'NT$18500';
+        phoneGB1.forEach((item)=>{
+          item.classList = 'card w-40 mx-2 height-90px my-1 cardHover';
+        });
+        this.classList = 'blue card w-40 mx-2 height-90px my-1';
+      };
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
